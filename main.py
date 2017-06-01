@@ -1,8 +1,3 @@
-# def waiting(order):
-#     if order = a_input:
-#         return True
-#     return
-
 from interpreter import *
 
 waiting = False
