@@ -28,6 +28,135 @@ while not recip == ["exit"]:
         if recip[0] == 'clear':
             clear(recip[0])
 
+        elif recip[0] == 'read':
+            value = read()
+            if type(value) == int:
+                if recip[1] in var_1.keys():
+                    if type(var_1[recip[1]]) == int:
+                        var_1[recip[1]] = value
+                        print(var_1)
+                    else:
+                        print('Se esperaba entero y se recibio string')
+                elif recip[1] in var_2.keys():
+                    if type(var_2[recip[1]]) == int:
+                        var_2[recip[1]] = value
+                        print(var_2)
+                    else:
+                        print('Se esperaba entero y se recibio string')
+                elif recip[1] in var_3.keys():
+                    if type(var_3[recip[1]]) == int:
+                        var_3[recip[1]] = value
+                        print(var_3)
+                    else:
+                        print('Se esperaba entero y se recibio string')
+                elif recip[1] in var_4.keys():
+                    if type(var_4[recip[1]]) == int:
+                        var_4[recip[1]] = value
+                        print(var_4)
+                    else:
+                        print('Se esperaba entero y se recibio string')
+                elif recip[1] in var_5.keys():
+                    if type(var_5[recip[1]]) == int:
+                        var_5[recip[1]] = value
+                        print(var_5)
+                    else:
+                        print('Se esperaba entero y se recibio string')
+                elif recip[1] in var_6.keys():
+                    if type(var_6[recip[1]]) == int:
+                        var_6[recip[1]] = value
+                        print(var_6)
+                    else:
+                        print('Se esperaba entero y se recibio string')
+                elif recip[1] in var_7.keys():
+                    if type(var_7[recip[1]]) == int:
+                        var_7[recip[1]] = value
+                        print(var_7)
+                    else:
+                        print('Se esperaba entero y se recibio string')
+                elif recip[1] in var_8.keys():
+                    if type(var_8[recip[1]]) == int:
+                        var_8[recip[1]] = value
+                        print(var_8)
+                    else:
+                        print('Se esperaba entero y se recibio string')
+                elif recip[1] in var_9.keys():
+                    if type(var_9[recip[1]]) == int:
+                        var_9[recip[1]] = value
+                        print(var_9)
+                    else:
+                        print('Se esperaba entero y se recibio string')
+                elif recip[1] in var_10.keys():
+                    if type(var_10[recip[1]]) == int:
+                        var_10[recip[1]] = value
+                        print(var_10)
+                    else:
+                        print('Se esperaba entero y se recibio string')
+            elif type(value) == str:
+                if recip[1] in var_1.keys():
+                    if type(var_1[recip[1]]) == str:
+                        var_1[recip[1]] = value
+                        print(var_1)
+                    else:
+                        print('Se esperaba string y se recibio entero')
+                elif recip[1] in var_2.keys():
+                    if type(var_2[recip[1]]) == str:
+                        var_2[recip[1]] = value
+                        print(var_2)
+                    else:
+                        print('Se esperaba string y se recibio entero')
+                elif recip[1] in var_3.keys():
+                    if type(var_3[recip[1]]) == str:
+                        var_3[recip[1]] = value
+                        print(var_3)
+                    else:
+                        print('Se esperaba string y se recibio entero')
+                elif recip[1] in var_4.keys():
+                    if type(var_4[recip[1]]) == str:
+                        var_4[recip[1]] = value
+                        print(var_4)
+                    else:
+                        print('Se esperaba string y se recibio entero')
+                elif recip[1] in var_5.keys():
+                    if type(var_5[recip[1]]) == str:
+                        var_5[recip[1]] = value
+                        print(var_5)
+                    else:
+                        print('Se esperaba string y se recibio entero')
+                elif recip[1] in var_6.keys():
+                    if type(var_6[recip[1]]) == str:
+                        var_6[recip[1]] = value
+                        print(var_6)
+                    else:
+                        print('Se esperaba string y se recibio entero')
+                elif recip[1] in var_7.keys():
+                    if type(var_7[recip[1]]) == str:
+                        var_7[recip[1]] = value
+                        print(var_7)
+                    else:
+                        print('Se esperaba string y se recibio entero')
+                elif recip[1] in var_8.keys():
+                    if type(var_8[recip[1]]) == str:
+                        var_8[recip[1]] = value
+                        print(var_8)
+                    else:
+                        print('Se esperaba string y se recibio entero')
+                elif recip[1] in var_9.keys():
+                    if type(var_9[recip[1]]) == str:
+                        var_9[recip[1]] = value
+                        print(var_9)
+                    else:
+                        print('Se esperaba string y se recibio entero')
+                elif recip[1] in var_10.keys():
+                    if type(var_10[recip[1]]) == str:
+                        var_10[recip[1]] = value
+                        print(var_10)
+                    else:
+                        print('Se esperaba string y se recibio entero')
+            else:
+                print(type(value))
+                print('Error de valor dado 3')
+
+
         elif recip[0] == 'print':  # imprimir en pantalla
             my_list = [var_1, var_2, var_3, var_4, var_5, var_6, var_7, var_8, var_9, var_10]
             keys_list = []
@@ -277,7 +406,7 @@ while not recip == ["exit"]:
                             var_10[recip[0]] = v_1
                             print(var_10)
                         else:
-                            print ('Error (ya no hay variables o no estan declaradas)')                        
+                            print ('Error (ya no hay variables o no estan declaradas)')
                     except ValueError:
                         print('Error de valores')
                 else:

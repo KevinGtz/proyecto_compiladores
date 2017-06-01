@@ -93,9 +93,24 @@ def separaTokens(linea):
         tokens2.remove("borrar")
     return tokens2
 
-def print_1(parameter, *args):
+def print_1(parameter, *args):  # Funcion que imprime en pantalla
     msj = print(parameter, *args)
     return msj
 
-def clear(arg):
+def clear(arg):  # Funcion que limpia la pantalla
     return call(arg)
+
+def read():
+    value = input('Dame el valor de la variable: ')
+    try:
+        value = int(value)
+        if type(value) == int:
+            value = int(value)
+            return value
+    except:
+        value = value
+    if type(value) == str:
+        value = str(value)
+        return value
+    else:
+        return 'Read_Function_Error'
